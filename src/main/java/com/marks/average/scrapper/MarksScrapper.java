@@ -21,6 +21,7 @@ public class MarksScrapper {
     private final String urlUcs = "https://www.ipleiria.pt/cursos/course/licenciatura-em-engenharia-informatica/";
 
 
+
     public List<Element> getCursosList() {
 
         List<Element> elementList = getDocument(urlCourses).getElementsByClass("block");

@@ -29,7 +29,7 @@ public class MarksService {
         for (Element e : marksScrapper.getCursosList()
                 ) {
             if (!e.attr("title").isEmpty())
-                cursos.add(new Curso(e.attr("title")));
+                cursos.add(new Curso(e.attr("title"), e.attr("href")));
         }
 
         return cursos;
