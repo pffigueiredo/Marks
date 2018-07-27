@@ -5,9 +5,11 @@
     <td>Href</td>
   </thead>
   <tbody>
+  <ng-container *ngIf="allDataFetched">
     <tr *ngFor="let course of courses">
       <td>{{course.nome}}</td>
     </tr>
+  </ng-container>
   </tbody>
 
 </table>
